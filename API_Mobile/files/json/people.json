@@ -8,6 +8,20 @@
       "",
       "",
       "",
+    ],
+    "distance": 0.005,
+    "age": 25,
+    "sex": "Homme",
+    "orientation": "Hétéro",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "2"
+      }
     ]
   },
   {
@@ -19,6 +33,20 @@
       "",
       "",
       ""
+    ],
+    "distance": 0.2,
+    "age": 22,
+    "sex": "Homme",
+    "orientation": "Non défini",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "1"
+      }
     ]
   },
   {
@@ -30,6 +58,20 @@
       "",
       "",
       ""
+    ],
+    "distance": 1,
+    "age": 25,
+    "sex": "Non binaire",
+    "orientation": "Hétéro",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "2"
+      }
     ]
   },
   {
@@ -41,6 +83,20 @@
       "",
       "",
       ""
+    ],
+    "distance": 10,
+    "age": 40,
+    "sex": "Homme",
+    "orientation": "Hétéro",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "1"
+      }
     ]
   },
   {
@@ -52,6 +108,20 @@
       "",
       "",
       ""
+    ],
+    "distance": 2,
+    "age": 25,
+    "sex": "Femme",
+    "orientation": "Bi",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "2"
+      }
     ]
   },
   {
@@ -63,6 +133,20 @@
       "",
       "",
       ""
+    ],
+    "distance": 1,
+    "age": 85,
+    "sex": "Femme",
+    "orientation": "Hétéro",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "2"
+      }
     ]
   },
   {
@@ -74,6 +158,20 @@
       "",
       "",
       ""
+    ],
+    "distance": 0.2,
+    "age": 36,
+    "sex": "Femme",
+    "orientation": "Hétéro",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "2"
+      }
     ]
   },
   {
@@ -85,6 +183,20 @@
       "",
       "",
       ""
+    ],
+    "distance": 100,
+    "age": 25,
+    "sex": "Femme",
+    "orientation": "Gay",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "2"
+      }
     ]
   },
   {
@@ -96,6 +208,20 @@
       "",
       "",
       ""
+    ],
+    "distance": 89,
+    "age": 19,
+    "sex": "Homme",
+    "orientation": "Hétéro",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "2"
+      }
     ]
   },
   {
@@ -107,6 +233,20 @@
       "",
       "",
       ""
+    ],
+    "distance": 11,
+    "age": 12,
+    "sex": "Femme",
+    "orientation": "Hétéro",
+    "questions": [
+      {
+        "question": "1 ou 2?",
+        "responses": [
+          "1",
+          "2"
+        ],
+        "correctResponse": "1"
+      }
     ]
   }
 ]

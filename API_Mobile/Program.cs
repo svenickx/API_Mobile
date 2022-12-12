@@ -9,6 +9,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("EnableCORS", builder =>
+//    {
+//        builder.WithOrigins().AllowAnyMethod().AllowAnyHeader().SetIsOriginAllowed(origin => true) // allow any origin
+//       .AllowCredentials().Build();
+//    });
+//});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -19,11 +28,11 @@ if (app.Environment.IsDevelopment())
 }
 
 
-app.MapGet("/people/{id}", (int page) =>
+app.MapGet("/people/{page}", (int page) =>
 {
     int nb = (page - 1) * 5;
     String JSONtxt = File.ReadAllText(@".\files\json\people.json");
-    List<People> people = JsonConvert.DeserializeObject<List<People>>(JSONtxt);
+    List<People> people = JsonConvert.DeserializeObject<List<People>>(JSONtxt)!;
     IEnumerable<People>? result = new List<People>();
     if (nb > people.Count - 1)
     {
@@ -41,5 +50,18 @@ app.MapGet("/people/{id}", (int page) =>
     return result;
 })
 .WithName("GetPeople");
+
+app.MapGet("/person/{id}", (int id) =>
+{
+    String JSONtxt = File.ReadAllText(@".\files\json\people.json");
+    List<People> people = JsonConvert.DeserializeObject<List<People>>(JSONtxt)!;
+    People? result = people!.Where(p => p.Id == id).FirstOrDefault();
+    if (result is null)
+    {
+        return new People();
+    }
+    return result;
+})
+.WithName("GetPerson");
 
 app.Run();
