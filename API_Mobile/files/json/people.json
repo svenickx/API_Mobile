@@ -1,42 +1,112 @@
 [
   {
     "id": 1,
-    "name":  "Sven"
+    "name": "Sven",
+    "mainPicture": "",
+    "pictures": [
+      "",
+      "",
+      "",
+      "",
+    ]
   },
   {
     "id": 2,
-    "name": "Alexis"
+    "name": "Alexis",
+    "mainPicture": "",
+    "pictures": [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "id": 3,
-    "name": "Yohan"
+    "name": "Yohan",
+    "mainPicture": "",
+    "pictures": [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "id": 4,
-    "name": "Zakaria"
+    "name": "Zakaria",
+    "mainPicture": "https://avatars.githubusercontent.com/u/14262386?v=4",
+    "pictures": [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "id": 5,
-    "name": "Juliette"
+    "name": "Juliette",
+    "mainPicture": "",
+    "pictures": [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "id": 6,
-    "name": "Clara"
+    "name": "Clara",
+    "mainPicture": "",
+    "pictures": [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "id": 7,
-    "name": "Luna"
+    "name": "Mia",
+    "mainPicture": "https://i0.wp.com/libnanews.com/wp-content/uploads/2022/08/mia-khalifa.webp?resize=768%2C898&ssl=1",
+    "pictures": [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "id": 8,
-    "name": "Laura"
+    "name": "Laura",
+    "mainPicture": "",
+    "pictures": [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "id": 9,
-    "name": "Pauline"
+    "name": "Pauline",
+    "mainPicture": "",
+    "pictures": [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   {
     "id": 10,
-    "name": "Lucie"
+    "name": "Lucie",
+    "mainPicture": "",
+    "pictures": [
+      "",
+      "",
+      "",
+      ""
+    ]
   }
 ]
