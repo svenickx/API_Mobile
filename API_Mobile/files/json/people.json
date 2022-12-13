@@ -2,12 +2,11 @@
   {
     "id": 1,
     "name": "Sven",
-    "mainPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh-SNmPTfy6nRdqhgu_LYTHjZiaHdcjI73tg&usqp=CAU",
     "pictures": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh-SNmPTfy6nRdqhgu_LYTHjZiaHdcjI73tg&usqp=CAU",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUbjoL6IYzihcnn3-MDo1E_VjkoRKYg-HLw&usqp=CAU",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLwO-HTHq8iegiElLKvQHdwWtNLjRL0MSpQ&usqp=CAU",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDr1i25jqVHRFv8eBDwljZqXTSBVO60GRsiQ&usqp=CAU",
-      ""
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDr1i25jqVHRFv8eBDwljZqXTSBVO60GRsiQ&usqp=CAU"
     ],
     "distance": 0.005,
     "age": 25,
@@ -35,7 +34,6 @@
   {
     "id": 2,
     "name": "Alexis",
-    "mainPicture": "",
     "pictures": [
       "",
       "",
@@ -85,12 +83,8 @@
   {
     "id": 4,
     "name": "Zakaria",
-    "mainPicture": "https://avatars.githubusercontent.com/u/14262386?v=4",
     "pictures": [
-      "",
-      "",
-      "",
-      ""
+      "https://avatars.githubusercontent.com/u/14262386?v=4"
     ],
     "distance": 10,
     "age": 40,
@@ -160,12 +154,8 @@
   {
     "id": 7,
     "name": "Mia",
-    "mainPicture": "https://i0.wp.com/libnanews.com/wp-content/uploads/2022/08/mia-khalifa.webp?resize=768%2C898&ssl=1",
     "pictures": [
-      "",
-      "",
-      "",
-      ""
+      "https://i0.wp.com/libnanews.com/wp-content/uploads/2022/08/mia-khalifa.webp?resize=768%2C898&ssl=1"
     ],
     "distance": 0.2,
     "age": 36,
