@@ -10,15 +10,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("EnableCORS", builder =>
-//    {
-//        builder.WithOrigins().AllowAnyMethod().AllowAnyHeader().SetIsOriginAllowed(origin => true) // allow any origin
-//       .AllowCredentials().Build();
-//    });
-//});
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
