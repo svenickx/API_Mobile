@@ -1,3 +1,4 @@
+using API_Mobile;
 using API_Mobile.Models;
 using Newtonsoft.Json;
 using System.Security.Principal;
@@ -33,6 +34,10 @@ app.MapGet("/people/{page}", (int page) =>
     int nb = (page - 1) * 5;
     String JSONtxt = File.ReadAllText(@".\files\json\people.json");
     List<People> people = JsonConvert.DeserializeObject<List<People>>(JSONtxt)!;
+    foreach (People person in people)
+    {
+        person.Pictures = GetPicturesPath(person.Pictures);
+    }
     IEnumerable<People>? result = new List<People>();
     if (nb > people.Count - 1)
     {
@@ -51,6 +56,7 @@ app.MapGet("/people/{page}", (int page) =>
 })
 .WithName("GetPeople");
 
+
 app.MapGet("/person/{id}", (int id) =>
 {
     String JSONtxt = File.ReadAllText(@".\files\json\people.json");
@@ -63,5 +69,21 @@ app.MapGet("/person/{id}", (int id) =>
     return result;
 })
 .WithName("GetPerson");
+
+static List<string>? GetPicturesPath(List<string>? pictures)
+{
+    if (pictures is not null)
+    {
+        for (int i = 0; i < pictures.Count; i++)
+        {
+            #if DEBUG
+            pictures[i] = $"https://localhost:7225/files/images/{pictures[i]}";
+            #else
+            pictures[i] = $"";
+            #endif
+        }
+    }
+    return pictures;
+}
 
 app.Run();
