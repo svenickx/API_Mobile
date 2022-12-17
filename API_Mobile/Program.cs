@@ -33,7 +33,7 @@ app.MapGet("/people/{page}", (int page) =>
     
     if (nb + 5 >= people.Count)
     {
-        result = people.GetRange(nb, people.Count - nb - 1);
+        result = people.GetRange(nb, people.Count - nb);
     } 
     else
     {
