@@ -46,6 +46,12 @@ app.MapGet("/people/{page}", (int page) =>
 
 app.MapGet("/person/{id}", (int id) =>
 {
+    return GetPeople(id);
+})
+.WithName("GetPerson");
+
+People GetPeople(int id)
+{
     String JSONtxt = File.ReadAllText(@".\files\json\people.json");
     List<People> people = JsonConvert.DeserializeObject<List<People>>(JSONtxt)!;
     People? result = people!.Where(p => p.Id == id).FirstOrDefault();
@@ -54,8 +60,8 @@ app.MapGet("/person/{id}", (int id) =>
         return new People();
     }
     return result;
-})
-.WithName("GetPerson");
+
+}
 
 app.MapPost("/person/getMatches", (List<int> listMatches) =>
 {
@@ -79,6 +85,7 @@ app.MapGet("/messages/{id}", (int id) =>
     {
         return new Discussion();
     }
+    result.person = GetPeople(result.PersonId);
     return result;
 })
 .WithName("GetMessages");

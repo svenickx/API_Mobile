@@ -4,5 +4,6 @@
     {
         public int PersonId { get; set; }
         public List<Message> messages { get; set; } = new();
+        public People? person { get; set; }
     }
 }
