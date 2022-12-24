@@ -57,5 +57,18 @@ app.MapGet("/person/{id}", (int id) =>
 })
 .WithName("GetPerson");
 
+app.MapPost("/person/getMatches", (List<int> listMatches) =>
+{
+    String JSONtxt = File.ReadAllText(@".\files\json\people.json");
+    List<People> people = JsonConvert.DeserializeObject<List<People>>(JSONtxt)!;
+    List<People>? result = people!.Where(p => listMatches.Any(m => m == p.Id)).ToList();
+    if (result is null)
+    {
+        return new List<People>();
+    }
+    return result;
+})
+.WithName("GetMatches");
+
 
 app.Run();
