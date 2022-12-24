@@ -70,5 +70,18 @@ app.MapPost("/person/getMatches", (List<int> listMatches) =>
 })
 .WithName("GetMatches");
 
+app.MapGet("/messages/getMessages", (int id) =>
+{
+    String JSONtxt = File.ReadAllText(@".\files\json\messages.json");
+    List<Discussion> messages = JsonConvert.DeserializeObject<List<Discussion>>(JSONtxt)!;
+    Discussion? result = messages!.Where(m => m.PersonId == id).FirstOrDefault();
+    if (result is null)
+    {
+        return new Discussion();
+    }
+    return result;
+})
+.WithName("GetMessages");
+
 
 app.Run();

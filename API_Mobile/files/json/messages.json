@@ -1,0 +1,23 @@
+[
+  {
+    "personId": 1,
+    "messages": [
+      {
+        "senderId": 1,
+        "content": "Hello"
+      },
+      {
+        "senderId": 1,
+        "content": "Comment tu vas?"
+      },
+      {
+        "senderId": 4,
+        "content": "Super et toi?"
+      },
+      {
+        "senderId": 1,
+        "content": "Très bien, merci :)"
+      }
+    ]
+  }
+]
