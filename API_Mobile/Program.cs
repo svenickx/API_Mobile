@@ -70,7 +70,7 @@ app.MapPost("/person/getMatches", (List<int> listMatches) =>
 })
 .WithName("GetMatches");
 
-app.MapGet("/messages/getMessages", (int id) =>
+app.MapGet("/messages/{id}", (int id) =>
 {
     String JSONtxt = File.ReadAllText(@".\files\json\messages.json");
     List<Discussion> messages = JsonConvert.DeserializeObject<List<Discussion>>(JSONtxt)!;
