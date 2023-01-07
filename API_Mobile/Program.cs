@@ -83,7 +83,7 @@ app.MapGet("/messages/{id}", (int id) =>
     Discussion? result = messages!.Where(m => m.PersonId == id).FirstOrDefault();
     if (result is null)
     {
-        return new Discussion();
+        return new Discussion() { person = GetPeople(id), PersonId = id };
     }
     result.person = GetPeople(result.PersonId);
     return result;
